@@ -5,11 +5,77 @@
  */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+#header_logo{
+    position: relative;
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    background-size:contain;
+    overflow: visible;
+
+
+}
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom:50px;
+
+}
+#headings{
+    text-align:center;
+    padding-bottom:30px;
+}
+#headings:before,
+#headings:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
+#headings:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+#headings:after {
+    left: 0.5em;
+    margin-right: -50%;
 }
 
+#about_us{
+    position:relative;
+    top:120px;
+    left:50px;
+    width:75%;
+    length:75%;
+}
+
+#services_photo{
+    display: block;
+    margin: auto;
+    width:75%;
+    length:75%;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
 .text-muted {
     color: #777;
 }
@@ -21,6 +87,7 @@ body {
 p {
     font-size: 14px;
     line-height: 1.75;
+    font-family: 'Raleway', sans-serif;
 }
 
 p.large {
@@ -53,7 +120,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 
@@ -69,10 +136,13 @@ h6 {
     background-color: #222;
 }
 
+.bg-white{
+    background-color:white;
+}
 .btn-primary {
     border-color: #1ee2e7;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #fff;
     background-color: #1ee2e7;
@@ -123,7 +193,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #1ee2e7;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -135,7 +205,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #FF6347;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -147,7 +217,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #00FF7F;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -159,7 +229,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #4682B4;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -171,7 +241,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #FF0000;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -183,7 +253,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #2F4F4F;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -232,13 +302,13 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #062849;
 }
 
 .navbar-default .navbar-brand {
     /*    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
-    font-family: 'Roboto', sans-serif;
-    color: #1ee2e7;
+  /*   font-family: 'Roboto', sans-serif;
+    color: #1ee2e7; */
 }
 
 .navbar-default .navbar-brand:hover,
@@ -269,7 +339,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     /*    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     /*
     font-weight: 200;
     letter-spacing: 1px;
@@ -315,7 +385,7 @@ fieldset[disabled] .btn-xl.active {
     }
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: rgb(6,40,73);
     }
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
@@ -326,7 +396,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../images/5826a4f0d015d89e449ccb2a_3a3586cafd678954c62dd411566278b8-dl9ejl.jpg);
+    background-image: url(../images/AdobeStock_6760610.jpeg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -338,23 +408,26 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+    text-shadow: 2px 2px  80px black;
 }
 
 @media(min-width:768px) {
@@ -364,18 +437,20 @@ header .intro-text .intro-heading {
     }
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 30px;
+        text-shadow: 5px 5px  80px black;
     }
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+        text-shadow: 2px 2px  80px black;
     }
 }
 
@@ -392,7 +467,7 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -400,7 +475,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -471,7 +546,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-style: italic;
 }
@@ -728,28 +803,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #bbb;
 }
@@ -766,7 +841,7 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 40px;
 }
 
@@ -774,7 +849,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 40px;
 }
 
@@ -832,7 +907,7 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-style: italic;
 }
@@ -905,7 +980,7 @@ body {
 
 
 /* =====================================
-START: LOADING ICON FOR LOGGING OUT USER 
+START: LOADING ICON FOR LOGGING OUT USER
 ===================================== */
 
 .dizzy-gillespie {
@@ -980,7 +1055,7 @@ START: LOADING ICON FOR LOGGING OUT USER
 
 
 /* ===================================
-END: LOADING ICON FOR LOGGING OUT USER 
+END: LOADING ICON FOR LOGGING OUT USER
 =================================== */
 
 .social-icons {
