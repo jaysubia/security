@@ -16,6 +16,16 @@
 
 
 }
+
+#header_logo_2{
+    position: relative;
+    width: 20%;
+    height: auto;
+    background-size:contain;
+    overflow: visible;
+
+
+}
 body {
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -40,12 +50,13 @@ body {
     vertical-align: middle;
     width: 20%;
 }
-@media (max-width: 767px)
-{
-    #header_logo
-    {
-        display: none;
-    }
+@media (min-width: 767px) and (max-width: 1920px){
+    #header_logo { display: block; }
+    #header_logo_2 { display: none; }
+}
+@media (min-width: 320px) and (max-width: 766px){
+    #header_logo_2 { display: block; }
+    #header_logo {display:none;}
 }
 #headings:before {
     right: 0.5em;
