@@ -9,7 +9,6 @@
 
 #header_logo{
     position: relative;
-    border-radius: 50%;
     width: 30%;
     height: auto;
     background-size:contain;
@@ -40,6 +39,13 @@ body {
     position: relative;
     vertical-align: middle;
     width: 20%;
+}
+@media (max-width: 767px)
+{
+    #header_logo
+    {
+        display: none;
+    }
 }
 #headings:before {
     right: 0.5em;
