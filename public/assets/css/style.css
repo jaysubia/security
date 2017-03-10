@@ -17,15 +17,7 @@
 
 }
 
-#header_logo_2{
-    position: relative;
-    width: 20%;
-    height: auto;
-    background-size:contain;
-    overflow: visible;
 
-
-}
 body {
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
@@ -50,13 +42,29 @@ body {
     vertical-align: middle;
     width: 20%;
 }
-@media (min-width: 767px) and (max-width: 1920px){
+@media (min-width: 750px) and (max-width: 2525px){
     #header_logo { display: block; }
-    #header_logo_2 { display: none; }
+    #mobile_logo { display: none; }
+   
 }
-@media (min-width: 320px) and (max-width: 766px){
-    #header_logo_2 { display: block; }
-    #header_logo {display:none;}
+@media (min-width: 310px) and (max-width: 749px){
+    .intro-lead-in {
+        display: none;
+    }
+#header_logo { display: none; }
+#mobile_logo { 
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block; 
+     width: 20%;
+    height: auto;
+
+    
+
+}
+    
 }
 #headings:before {
     right: 0.5em;
@@ -72,14 +80,14 @@ body {
     top:120px;
     left:50px;
     width:75%;
-    length:75%;
+    height:75%;
 }
 
 #services_photo{
     display: block;
     margin: auto;
     width:75%;
-    length:75%;
+    height:75%;
 }
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -455,10 +463,11 @@ header .intro-text .intro-heading {
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: 'Raleway', sans-serif;
-        font-size: 30px;
+        font-size: 40px;
         font-style: italic;
         line-height: 30px;
         text-shadow: 5px 5px  80px black;
+        font-weight:700;
     }
     header .intro-text .intro-heading {
         margin-bottom: 50px;
